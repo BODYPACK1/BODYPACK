@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BodyPack - Tienda de tenis</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>BodyPack</h1>
+        <p>Camina con estilo, corre hacia tus metas.</p>
+    </header>
+
+    <nav>
+        <a href="index.html"><button type="button">Inicio</button></a>
+        <a href="producto.html"><button type="button">Tenis</button></a>
+        <a href="beneficios.html"><button type="button">Beneficios</button></a>
+        <a href="contacto.html"><button type="button">Contacto</button></a>
+        <a href="pedido.html"><button type="button">Pedidos</button></a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Encuentra tu estilo en BodyPack</h2>
+            <h3>Tenis para cada paso de tu vida</h3>
+
+            <img src="imagenes/tenis.jpg"
+                 alt="Tenis deportivos de BodyPack">
+
+            <p>
+                En BodyPack encontrarás tenis deportivos,
+                casuales, para correr y entrenar. Tenemos
+                opciones para todos los géneros, diferentes
+                estilos y actividades.
+            </p>
+
+            <p>
+                Descubre modelos con plantillas de alta
+                tecnología, diseñadas para brindar comodidad
+                y soporte según las características de cada par.
+            </p>
+
+            <a href="producto.html">
+                <button type="button">Explorar tenis</button>
+            </a>
+        </section>
+
+        <section id="promociones">
+            <h2>¡Promociones BodyPack!</h2>
+            <h3>Tu próximo par te está esperando</h3>
+
+            <p>
+                Descubre nuestros descuentos y promociones
+                especiales en modelos seleccionados.
+            </p>
+
+            <p class="precio-promocion">
+                ¡Renueva tu estilo y aprovecha las ofertas!
+            </p>
+
+            <a href="producto.html">
+                <button type="button">Ver modelos</button>
+            </a>
+
+            <a href="pedido.html">
+                <button type="button">Realizar pedido</button>
+            </a>
+        </section>
+
+        <section>
+            <h2>¿Por qué elegir BodyPack?</h2>
+
+            <ul>
+                <li>Tenis para todos los géneros.</li>
+                <li>Modelos deportivos y casuales.</li>
+                <li>Opciones con plantillas de alta tecnología.</li>
+                <li>Variedad de estilos, colores y tallas.</li>
+                <li>Descuentos y promociones especiales.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>¡Encuentra tus próximos tenis!</h2>
+            <p>
+                Elige el modelo que combine con tu personalidad
+                y prepárate para dar el siguiente paso.
+            </p>
+
+            <a href="producto.html">
+                <button type="button">Ver productos</button>
+            </a>
+
+            <a href="contacto.html">
+                <button type="button">Contáctanos</button>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BodyPack. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+/* ===== ESTILOS GENERALES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #292929;
+    line-height: 1.7;
+}
+
+/* ===== ENCABEZADO ===== */
+header {
+    background: linear-gradient(135deg, #111827, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 44px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #e0e7ff;
+    font-size: 18px;
+}
+
+/* ===== NAVEGACIÓN ===== */
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 18px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* ===== BOTONES ===== */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: 2px solid #2563eb;
+    border-radius: 25px;
+    padding: 11px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: #2563eb;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.25);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+main {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* ===== SECCIONES ===== */
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    text-align: center;
+}
+
+/* ===== TÍTULOS ===== */
+h2 {
+    color: #1e40af;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #2563eb;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* ===== PÁRRAFOS ===== */
+p {
+    font-size: 16px;
+    margin: 15px 0;
+    color: #424242;
+}
+
+/* ===== IMÁGENES ===== */
+img {
+    display: block;
+    max-width: 100%;
+    width: 320px;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 15px;
+    border: 3px solid #dbeafe;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.04);
+}
+
+/* ===== LISTAS ===== */
+ul {
+    list-style: none;
+    max-width: 650px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+li {
+    background-color: #eff6ff;
+    border-left: 5px solid #2563eb;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* ===== FORMULARIOS ===== */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+/* ===== PROMOCIONES ===== */
+#promociones {
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    border: 2px dashed #2563eb;
+}
+
+#promociones h2 {
+    color: #1d4ed8;
+}
+
+.precio-promocion {
+    color: #dc2626;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ===== ENLACES ===== */
+section a {
+    display: inline-block;
+    margin: 8px 5px;
+    text-decoration: none;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ===== DISEÑO RESPONSIVO ===== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a,
+    nav button {
+        width: 100%;
+    }
+
+    nav button {
+        max-width: 300px;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    section a button {
+        width: 100%;
+        max-width: 280px;
+    }
+}
